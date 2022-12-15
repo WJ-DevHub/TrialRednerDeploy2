@@ -15,7 +15,7 @@ export default class RecipeBook extends React.Component {
         newIngredients:""
     };
     
-    BASE_API_URL = "";
+    BASE_API_URL = "https://trial-deployment.onrender.com";
 
     async componentDidMount(){
       console.log(`ComponentDidMount`);
