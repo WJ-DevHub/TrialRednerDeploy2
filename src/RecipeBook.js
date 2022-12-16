@@ -46,8 +46,8 @@ export default class RecipeBook extends React.Component {
       //base temp recipe
       const newRecipe = {
           //_id: Math.round(Math.random()* 10000 + 1), //let mongodb give an id
-          title: this.state.newRecipeTitle,
-          ingredients: this.state.newRecipeIngredients.split(",")//split based a comma and insert into an array
+          title: this.state.newTitle,
+          ingredients: this.state.newIngredients.split(",")//split based a comma and insert into an array
       }
   
       const response = await axios.post(this.BASE_API_URL + "/recipes", newRecipe);
